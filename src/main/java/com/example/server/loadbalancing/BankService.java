@@ -1,8 +1,7 @@
-package com.example.loadbalancing;
+package com.example.server.loadbalancing;
 
 import com.example.models.*;
-import com.example.server.AccountDatabase;
-import com.example.server.CashStreamingRequest;
+import com.example.server.rpctypes.AccountDatabase;
 import io.grpc.Status;
 import io.grpc.stub.StreamObserver;
 

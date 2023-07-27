@@ -1,4 +1,4 @@
-package com.example.loadbalancing;
+package com.example.server.loadbalancing;
 
 import io.grpc.Server;
 import io.grpc.ServerBuilder;

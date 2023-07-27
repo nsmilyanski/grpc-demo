@@ -1,4 +1,4 @@
-package com.example.server;
+package com.example.server.rpctypes;
 
 import java.util.Map;
 import java.util.function.Function;

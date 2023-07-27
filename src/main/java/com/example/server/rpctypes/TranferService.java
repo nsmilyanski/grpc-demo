@@ -1,4 +1,4 @@
-package com.example.server;
+package com.example.server.rpctypes;
 
 import com.example.models.TransferRequest;
 import com.example.models.TransferResponse;

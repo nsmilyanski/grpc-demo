@@ -1,6 +1,5 @@
-package com.example.client;
+package com.example.client.rpctypes;
 
-import com.example.models.BankServiceGrpc;
 import com.example.models.TransferRequest;
 import com.example.models.TransferServiceGrpc;
 import io.grpc.ManagedChannel;

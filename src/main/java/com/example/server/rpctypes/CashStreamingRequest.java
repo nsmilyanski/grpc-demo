@@ -1,4 +1,4 @@
-package com.example.server;
+package com.example.server.rpctypes;
 
 import com.example.models.Balance;
 import com.example.models.DepositRequest;

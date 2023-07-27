@@ -1,4 +1,4 @@
-package com.example.client;
+package com.example.client.rpctypes;
 
 
 import com.example.models.*;
@@ -19,7 +19,7 @@ public class BankClientTest {
 
     @BeforeAll
     public void setUp() {
-        ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 8081)
+        ManagedChannel managedChannel = ManagedChannelBuilder.forAddress("localhost", 6565)
                 .usePlaintext()
                 .build();
 
@@ -49,7 +49,7 @@ public class BankClientTest {
     @Test
     public void withdrawAsyncTest() throws InterruptedException {
         CountDownLatch countDownLatch = new CountDownLatch(1);
-        WithdrawRequest withdrawRequest = WithdrawRequest.newBuilder().setAccountNumber(10).setAmount(50).build();
+        WithdrawRequest withdrawRequest = WithdrawRequest.newBuilder().setAccountNumber(10).setAmount(60).build();
         this.bankServiceStub.withdraw(withdrawRequest, new MoneyStreamingResponse(countDownLatch));
 
         countDownLatch.await();

@@ -1,12 +1,10 @@
-package com.example.server;
+package com.example.server.rpctypes;
 
 import com.example.models.Account;
 import com.example.models.TransferRequest;
 import com.example.models.TransferResponse;
 import com.example.models.TransferStatus;
 import io.grpc.stub.StreamObserver;
-
-import java.util.List;
 
 public class TranferStreamingRequest implements StreamObserver<TransferRequest> {
 
